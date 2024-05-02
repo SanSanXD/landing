@@ -1,0 +1,14 @@
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+	
+}
+ul {
+	
+	margin: 0;
+	list-style: none;
+}
+li {
+	padding-left: 0;
+}
