@@ -36,18 +36,17 @@ body {
 }
 
 .header {
-	margin: 64px auto;
+	height: 92px;
 	max-width: 1440px;
+	gap: 203px;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-
 }
 
 .header__logo {
 	height: 39px;
-	margin-left: 45px;
 	display: flex;
+	margin-left: 30px;
 	flex-direction: row;
 	align-items: center;
 }
@@ -72,11 +71,9 @@ body {
 }
 
 .header__list {
-	margin-right: 300px;
 	align-items: center;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 }
 
 .header__logoname {
@@ -106,13 +103,10 @@ body {
 }
 
 .emotionsflower {
-	margin: 185px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1440px;
-
-
 }
 
 .emotionsflower__block1 {
@@ -175,22 +169,123 @@ body {
 	margin-right: 34px;
 }
 
-.emotionsflower__button-ball { 
+.emotionsflower__button-ball {
 	display: flex;
 	align-items: center;
 	position: absolute;
-    right: 3px;
+	right: 3px;
 }
+
 .emotionsflower__block2 {
 	display: flex;
 	position: relative;
 }
+
 .emotionsflower__background {
 	position: absolute;
+
+
 }
-.emotionsflower__gorshok{
+
+.emotionsflower__gorshok {
 	position: absolute;
+	width: 795px;
+	height: 795px;
+	right: 80px;
+	top: 85px;
+
 }
+
 .emotionsflower__smile {
 	position: absolute;
+	left: 3.86%;
+	right: 16.04%;
+	top: 64.44%;
+
+}
+
+.emotionsflower__emotions {
+	margin-left: 61px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	right: 4.24%;
+	top: 30.19%;
+	bottom: 91.88%;
+}
+
+.emotionsflower__happy {
+	margin-bottom: 30px;
+}
+
+.emotionsflower__angry {
+	margin-bottom: 30px;
+
+}
+
+.emotionsflwower__normal {
+	margin-bottom: 30px;
+}
+
+.infoemotions__background1 {
+	width: 341px;
+	height: 332px;
+	background: #E2BD64;
+	box-shadow: 0px 4px 8.1px rgba(0, 0, 0, 0.11);
+	border-radius: 77px 0px 0px 77px;
+}
+
+.infoemotions__block2 {
+	width: 1281px;
+	height: 166px;
+	background: #294030;
+	border-radius: 77px 0px 0px 77px;
+
+}
+
+.infoemotions__block3 {
+	width: 257px;
+	height: 166px;
+	background: linear-gradient(90deg, #839F6F 0%, #9BB989 100%);
+}
+
+.infoemotions__block4 {
+	width: 940px;
+	height: 166px;
+	background: #406048;
+	box-shadow: 0px 4px 8.1px rgba(0, 0, 0, 0.11);
+
+}
+
+.infoemotionts__2text1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #E6E6E6;
+}
+
+.infoemotionts__2text2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #E6E6E6;
+}
+
+.infoemotions__4text1 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+
+	color: #E6E6E6;
+}
+
+.infoemotions__youtube {
+	width: 39px;
+	height: 39px;
 }
