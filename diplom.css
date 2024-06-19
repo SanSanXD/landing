@@ -1290,7 +1290,7 @@ border-radius: 130px 0px 0px 0px;
 
 }
 .main{
-	display: ne;
+	display: none;
 }
 .can-get{
 	display: block;
@@ -1302,16 +1302,16 @@ border-radius: 130px 0px 0px 0px;
 	align-items: center;
 }
 .emotions-select{
-	display: no;
+	display: none;
 }
 .preorder{
-	display: no;
+	display: none;
 }
 .footer {
-	display: ne;
+	display: none;
 }
 .header__box {
-	display: ne;
+	display: none;
 }
 
 @media (max-width:1350px) {
@@ -1338,7 +1338,7 @@ border-radius: 130px 0px 0px 0px;
 
 	}
 	.header__list {
-		display: no;
+		display: none;
 	
 	}
 	.header__logoname {
