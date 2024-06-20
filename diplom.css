@@ -787,7 +787,7 @@ margin-top: 20%;
     
 }
 .preorder {
-	width: 1440px;
+
     margin: auto 0;
     display: flex;
     justify-content: center;
@@ -1306,7 +1306,7 @@ border-radius: 130px 0px 0px 0px;
 	display: ne;
 }
 .preorder{
-	display: none;
+	display: ;
 }
 .footer {
 	display: none;
@@ -1328,6 +1328,7 @@ border-radius: 130px 0px 0px 0px;
 	.can-get {
 		display: flex;
 				flex-direction: column;
+				width: 0;
 		}
 		.can-get__bootom {
 		display: flex;
@@ -1425,12 +1426,210 @@ border-radius: 130px 0px 0px 0px;
 	display: flex;
 		justify-content: center;
 	}
-	
+	.preorder {
+		margin: 490px auto 0 auto;
+		
 	}
-.can-get {
-	display: ne;
+	.preorder__block {
+		width: 500px;
+		height: 250px;
+		background: #578B69;
+		border-radius: 35px 35px 35px 35px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.preorder__img {
+		border-radius: 0 45px 45px 0;
+		object-fit: cover;
+		width: 100px;
+		position: relative;
+		height: 263px;
+		top: -5px;
+		left: 335px;
+	}
+	.preorder__block {
+        width: 810px;
+        height: 349px;
+        background: #578B69;
+        border-radius: 35px 35px 35px 35px;
+        display: flex;
+        justify-content: center;
+    }
+	.preorder__left {
+		/* display: none; */
+		position: relative;
+		width: 1065px;
+	}
+	.preorder__logo {
+		left: 275px;
+		width: 81px;
+		display: flex;
+		height: 59px;
+		position: relative;
+		top: 7%;
+	}
+	.preorder__left-text-top {
+		position: relative;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 39px;
+		color: #E6E6E6;
+		top: 5%;
+		left: 30.5%;
+	}
+	.preorder__left-line {
+		position: relative;
+		width: 310px;
+		top: 4%;
+		left: 26.5%;
+		height: 0px;
+		border: 1.5px solid rgba(230, 230, 230, 0.7);
+	}
+	.preorder__left-border-telegram {
+		position: relative;
+		width: 322px;
+		height: 38px;
+		background: #4C7D5D;
+		border-radius: 17px;
+		top: 9%;
+		left: 24.2%;
+	}
+	.preorder__telegram {
+		width: 288px;
+		background: #4C7D5D;
+		border: #4C7D5D;
+		position: absolute;
+		left: 6.32%;
+		right: 75.88%;
+		top: 26%;
+		bottom: 26.38%;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgba(230, 230, 230, 0.62);
+	}
+	.preorder__left-border-telegram {
+		position: relative;
+		width: 322px;
+		height: 38px;
+		background: #4C7D5D;
+		border-radius: 17px;
+		top: 9%;
+		left: 24.2%;
+	}
+	.preorder__left-choice {
+		position: relative;
+		top: 11%;
+		width: 35px;
+		height: 20px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 15px;
+		color: rgba(230, 230, 230, 0.7);
+		left: 48%;
+	}
+	.preorder__left-border-email {
+		position: relative;
+		width: 208px;
+		height: 50px;
+		width: 322px;
+		height: 38px;
+		background: #4C7D5D;
+		border-radius: 15px;
+		top: 12%;
+		left: 24.2%;
+	}
+	.preorder__email {
+		width: 297px;
+		background: #4C7D5D;
+		border: #4C7D5D;
+		position: absolute;
+		left: 6.32%;
+		right: 75.88%;
+		top: 26%;
+		bottom: 26.38%;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgba(230, 230, 230, 0.62);
+	}
+	.preorder__left-eclips {
+		box-sizing: border-box;
+		position: relative;
+		width: 179px;
+		top: 18%;
+		left: 36.3%;
+		height: 54px;
+		border: 7px solid #E2BD64;
+		border-radius: 30px;
+	}
+	.preorder__left-eclips-text {
+		position: relative;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 24px;
+		top: 7%;
+		left: 41.5%;
+		color: #E6E6E6;
+	}
+	.preorder__left-back1 {
+		position: absolute;
+		top: 7%;
+		width: 80px;
+		left: 81%;
+	}
+	.preorder__left-back2 {
+		position: absolute;
+		top: 49%;
+		left: 4%;
+		width: 98px;
+	}
+	.preorder__left-back3 {
+		position: absolute;
+		top: 62%;
+		width: 97px;
+		left: 4%;
+	}
+	.preorder__left-leaf1 {
+		position: absolute;
+		top: -57%;
+		z-index: -1;
+		left: 25%;
+	}
+	.preorder__left-leaf2 {
+		position: absolute;
+		top: 69.3%;
+		left: 2%;
+		z-index: -1;
+	}
+	.preorder__left {
+		/* display: none; */
+		position: relative;
+		width: 1065px;
+	}
+		.preorder__img {
+			border-radius: 0 45px 45px 0;
+			object-fit: cover;
+			width: 205px;
+			position: relative;
+			height: 360px;
+			top: -5px;
+			left: 4px;
+		}	
 }
-	
-
-	
-
+@media (max-width:760px) {
+	.body {
+		background-color: black;
+	}
+}
