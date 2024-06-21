@@ -629,9 +629,7 @@ body {
 	line-height: 44px;
 	color: #E6E6E6;
 }
-.emotions-select__left {
-	
-}
+
 
 
 
@@ -1235,9 +1233,9 @@ color: #FFFFFF;
 	display: flex;
     align-items: center;
 }
-.footer__bottom {
 
-}
+
+
 .footer__bottom-biglogo {
 	position: absolute;
     font-family: 'Montserrat';
@@ -1552,7 +1550,7 @@ border-radius: 130px 0px 0px 0px;
 			left: 143px;
 		}
 	}
-	}
+	
 
 
 @media (max-width:1350px) {
@@ -1604,7 +1602,7 @@ border-radius: 130px 0px 0px 0px;
 			position: absolute;
 			display: block;
 			left: 263px;
-			width: width: 353px;
+			width:  353px;
 			width: 498px;
 			top: 420px;
 			height: 0px;
@@ -1629,7 +1627,7 @@ border-radius: 130px 0px 0px 0px;
     }
 
 
-}
+
 @media (max-width:980px) {
 	.can-get {
 		display: flex;
