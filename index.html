@@ -22,7 +22,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
     rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
 </head>
 
 <body class="body">
@@ -200,17 +202,20 @@
     <div class="preorder__block">
       <div class="preorder__left">
          <img src="Group 119.svg" alt="" class="preorder__logo">
-         <div class="preorder__left-text-top">Сделать предазаказ</div>
-         <div class="preorder__left-line"></div>
-         <div class="preorder__left-border-telegram">
-          <input  class="preorder__telegram"  type="text" placeholder="Telegram">
-         </div>
-         <div class="preorder__left-choice">или</div>
-         <div class="preorder__left-border-email">
-            <input  class="preorder__email"  type="text" placeholder="Email">
-         </div>
-         <div class="preorder__left-eclips"></div>
-         <div class="preorder__left-eclips-text">Отправить</div>
+         <div class="preorder__left-text-top">Сделать предзаказ</div>
+    <div class="preorder__left-line"></div>
+
+  
+    <div class="preorder__left-border-telegram">
+        <form id="contact-form">
+            <input class="preorder__telegram" id="telegram" name="telegram" type="text" placeholder="Telegram" required>
+        </form>
+    </div>
+    <div class="preorder__left-choice">или</div>
+    <div class="preorder__left-border-email">
+        <input class="preorder__email" id="email" type="email" placeholder="Email" required>
+    </div>
+    <button type="button" onclick="sendForm()" class="preorder__left-eclips-text">Отправить</button>
          <img src="greenbord1.png" alt="" class="preorder__left-back1">
          <img src="backgreen2.png" alt="" class="preorder__left-back2">
          <img src="back3green.png" alt="" class="preorder__left-back3">
@@ -257,8 +262,9 @@
           <img src="telegram.png" alt="" class="div-top-right-telegram">
           <div class="footer__top-right-num-log">@a_mew</div>
         </div>
-        <div class="footer__top-right-line2"></div>
+        
         </div>
+        <div class="footer__top-right-line2"></div>
       </div>
     </div>
     <div class="footer__bottom">
@@ -270,5 +276,34 @@
     </div>
   </div>
   
+  <script type="text/javascript">
+    
+    emailjs.init('XYxIRtLnuA2ojDBPP'); 
 
+    
+    function sendForm() {
+        
+        var telegram = document.getElementById('telegram').value;
+        var email = document.getElementById('email').value;
+
+        
+        var formData = {
+            telegram: telegram,
+            email: email
+        };
+
+       
+        emailjs.send('service_p6wr3cd', 'template_7hkd2o7', formData)
+            .then(function(response) {
+                console.log('Success!', response.status, response.text);
+                alert('Сообщение успешно отправлено!');
+            }, function(error) {
+                console.error('Failed...', error);
+                alert('Не удалось отправить сообщение: ' + JSON.stringify(error));
+            });
+
+       
+        document.getElementById('contact-form').reset();
+    }
+</script>
 </body>
