@@ -2545,6 +2545,32 @@ border-radius: 130px 0px 0px 0px;
         background: #406048;
         height: 50px;
     }
+	.nav-popup {
+		display:none;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background-color: white;
+		border: 1px solid #ccc;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		padding: 10px;
+		z-index: 1000;
+	}
+	
+	.nav-popup ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-popup ul li {
+		margin: 10px 0;
+	}
+	
+	.nav-popup ul li a {
+		text-decoration: none;
+		color: black;
+	}
 	.header__logo {
         margin: 10px 0 0 40px;
     }
