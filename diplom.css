@@ -2385,9 +2385,10 @@ border-radius: 130px 0px 0px 0px;
 		left: 44px;
     }
 	.preorder__left-eclips-text {
-        width: 140px;
-		height: 50px;
-		font-size: 20px;
+        width: 129px;
+        height: 40px;
+        font-size: 20px;
+        top: 66px;
     }
 	.preorder__left-choice {
      left: 135px
