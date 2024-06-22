@@ -2425,7 +2425,22 @@ border-radius: 130px 0px 0px 0px;
         color: rgba(230, 230, 230, 0.62);
     }
     }
-
+	.preorder__email {
+		width: 177px;
+		background: #4C7D5D;
+		border: #4C7D5D;
+		position: absolute;
+		left: 16px;
+		right: 75.88%;
+		top: 10px;
+		bottom: 26.38%;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgba(230, 230, 230, 0.62);
+	}
 
 @media (max-width: 553px) {
 	.emotionsflower__gorshok {
