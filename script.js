@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('click', function(event) {
         if (event.target !== navPopup && event.target !== navToggle && !navToggle.contains(event.target)) {
-            navPopup.style.display = 'block';
+            navPopup.style.display = 'none';
         }
     });
 });

@@ -1504,6 +1504,9 @@ border-radius: 130px 0px 0px 0px;
 .header__box {
 	
 }
+.nav-popup {
+	display:none;
+}
 .preorder {
 }
 @media (max-width:1450px) {
@@ -1899,6 +1902,43 @@ border-radius: 130px 0px 0px 0px;
         height: 100px;
         background: #406048;
     }
+	.nav-popup {
+		display:none;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		background-color: #406048;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		padding: 10px;
+		z-index: 1000;
+		border-radius: 0 0 0 10px;
+	}
+	
+	.nav-popup ul {
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.nav-popup ul hr {
+		width: 100%;
+	}
+
+	.nav-popup ul li {
+		margin: 10px 0;
+	}
+	
+	.nav-popup ul li a {
+		text-decoration: none;
+		color: #E6E6E6;
+		font-family: 'Montserrat';
+		font-size: 14px;
+	}
+	.nav-popup ul li a:hover {
+		color: #E2BD64;
+	}
 	.menu {
 		display: block;
 		position: relative;
@@ -2545,32 +2585,6 @@ border-radius: 130px 0px 0px 0px;
         background: #406048;
         height: 50px;
     }
-	.nav-popup {
-		display:none;
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		background-color: white;
-		border: 1px solid #ccc;
-		box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-		padding: 10px;
-		z-index: 1000;
-	}
-	
-	.nav-popup ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	
-	.nav-popup ul li {
-		margin: 10px 0;
-	}
-	
-	.nav-popup ul li a {
-		text-decoration: none;
-		color: black;
-	}
 	.header__logo {
         margin: 10px 0 0 40px;
     }
