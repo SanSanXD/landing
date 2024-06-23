@@ -421,8 +421,8 @@
     emailjs.init('XYxIRtLnuA2ojDBPP');
 
     function sendForm() {
-        var telegram = document.getElementById('telegram').value.trim();
-        var email = document.getElementById('email').value.trim();
+        let telegram = document.getElementById('telegram').value.trim();
+        let email = document.getElementById('email').value.trim();
 
       
         if (telegram === '' && email === '') {
@@ -430,7 +430,7 @@
             return;
         }
 
-        var formData = {
+        let formData = {
             telegram: telegram,
             email: email
         };

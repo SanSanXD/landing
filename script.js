@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navToggle = document.getElementById('navToggle');
-    const navPopup = document.getElementById('navPopup');
+    let navToggle = document.getElementById('navToggle');
+    let navPopup = document.getElementById('navPopup');
 
     navToggle.addEventListener('click', function() {
         if (navPopup.style.display === 'none') {
