@@ -416,22 +416,23 @@
   </div>
   
   <script type="text/javascript">
-    
-    emailjs.init('XYxIRtLnuA2ojDBPP'); 
+    emailjs.init('XYxIRtLnuA2ojDBPP');
 
-    
     function sendForm() {
-        
-        var telegram = document.getElementById('telegram').value;
-        var email = document.getElementById('email').value;
+        var telegram = document.getElementById('telegram').value.trim();
+        var email = document.getElementById('email').value.trim();
 
-        
+        // Проверка на пустые поля
+        if (telegram === '' && email === '') {
+            alert('Пожалуйста, заполните все поля.');
+            return;
+        }
+
         var formData = {
             telegram: telegram,
             email: email
         };
 
-       
         emailjs.send('service_p6wr3cd', 'template_7hkd2o7', formData)
             .then(function(response) {
                 console.log('Success!', response.status, response.text);
@@ -441,7 +442,6 @@
                 alert('Не удалось отправить сообщение: ' + JSON.stringify(error));
             });
 
-       
         document.getElementById('contact-form').reset();
     }
 </script>
