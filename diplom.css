@@ -880,6 +880,7 @@ height: 60.27px;
 }
 .arrow-down {
 	width: 60px;
+	display: none;
 }
 .emotions-select-icon {
 margin-right: 10px;
