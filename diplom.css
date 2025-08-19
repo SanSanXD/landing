@@ -1448,6 +1448,11 @@ color: #FFFFFF;
 	margin: 0 0 10px 0;;
 }
 
+.footer__bottom-logo {
+	height: 100px;
+	width: 100px;
+}
+
 .footer__logo-cont {
 	display: flex;
 	justify-content: center;
